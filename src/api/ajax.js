@@ -27,7 +27,6 @@ export default function ajax (url = '', data = {}, type = 'GET') {
       // 发送post请求
       promise = axios.post(url, data);
     }
-
     // 把ajax函数返回的promise对象的resolve和reject函数类型参数绑定给promise中状态回调函数，
     // 实现把服务器返回的数据response.data传递到ajax函数返回的promise对象中
     promise.then(response => {
